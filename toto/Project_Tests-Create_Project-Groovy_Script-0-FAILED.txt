@@ -1,0 +1,10 @@
+Status: FAILED
+Time Taken: 312
+Size: 0
+Timestamp: Fri Dec 09 15:25:23 CET 2022
+TestStep: Groovy Script
+Error:java.lang.NullPointerException: Cannot invoke "com.eviware.soapui.model.testsuite.TestStep.run(com.eviware.soapui.model.testsuite.TestCaseRunner, com.eviware.soapui.model.testsuite.TestCaseRunContext)" because "testStep" is null
+
+----------------- Messages ------------------------------
+java.lang.NullPointerException: Cannot invoke "com.eviware.soapui.model.testsuite.TestStep.run(com.eviware.soapui.model.testsuite.TestCaseRunner, com.eviware.soapui.model.testsuite.TestCaseRunContext)" because "testStep" is null
+error at line: 3
