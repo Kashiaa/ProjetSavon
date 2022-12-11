@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 public class LibreplanTest {
 
     @Test
-    public void test() throws Exception {
+    public void test_libre_plan() throws Exception {
         SoapUITestCaseRunner testCaseRunner = new SoapUITestCaseRunner();
         testCaseRunner.setProjectFile("src/test/resources/Projet_2_Libreplan.xml");
         testCaseRunner.setJUnitReport(true);
@@ -30,18 +30,6 @@ public class LibreplanTest {
 
         final boolean result = testCaseRunner.run();
         assertTrue(result);
-    }
-
-    //@Test
-    public void test_suite_projectTests() throws XmlException, IOException, SoapUIException {
-        WsdlProject project = new WsdlProject( "src/test/resources/Projet_2_Libreplan.xml" );
-        WsdlTestSuite testSuite = project.getTestSuiteByName( "Project Tests" );
-        WsdlTestCase testCase = testSuite.getTestCaseByName( "Create Project" );
-        final WsdlTestStep testStep = testCase.getTestStepByName("Groovy Script");
-
-        // create empty properties and run synchronously
-        TestRunner runner = testCase.run( new PropertiesMap(), false );
-        assertEquals( Status.FINISHED, runner.getStatus() );
     }
 
 }
