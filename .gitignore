@@ -110,3 +110,8 @@ fabric.properties
 *.txt
 
 .idea/**
+/target/
+
+.classpath
+.project
+.settings/**
