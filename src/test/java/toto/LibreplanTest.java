@@ -22,7 +22,7 @@ public class LibreplanTest {
     @Test
     public void test_libre_plan() throws Exception {
         SoapUITestCaseRunner testCaseRunner = new SoapUITestCaseRunner();
-        testCaseRunner.setProjectFile("src/test/resources/Projet_2_Libreplan.xml");
+        testCaseRunner.setProjectFile("src/test/resources/Projet_2_Libreplan_2.xml");
         testCaseRunner.setJUnitReport(true);
         testCaseRunner.setExportAll(true);
         testCaseRunner.setPrintReport(true);
